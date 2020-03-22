@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News/Log in</title>
+
+    <style>
+      .mr-t {
+        margin-top: 20px;
+      }
+      .log-in {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(105deg, #7fffd4, #008b8b);
+      }
+      .form {
+        width: 25vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 20px 100px 20px;
+        box-sizing: border-box;
+        box-shadow: 0 0 25px 1px #666;
+        background-color: #fff;
+        border-radius: 5px;
+      }
+      form > a,
+      form > button {
+        display: block;
+      }
+      form > input {
+        width: 100%;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid #888;
+        padding: 10px 0;
+      }
+
+      form > button {
+        border: none;
+        outline: none;
+        margin: auto;
+        width: 100%;
+        padding: 13px;
+        background-color: darkcyan;
+        border-radius: 5px;
+        color: whitesmoke;
+      }
+      form > button:hover {
+        background-color: darkturquoise;
+        transition: 0.5s;
+      }
+      form > button:active {
+        background-color: turquoise;
+        transition: 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="log-in">
+      <div class="form">
+        <h1>NEWS</h1>
+        <p>Log in</p>
+        <form action="">
+          <input type="email" placeholder="EMAIL ADDRESS" />
+          <input class="mr-t" type="password" placeholder="PASSWORD" />
+          <a class="mr-t" href="#">Forgotten your password?</a>
+          <button class="mr-t" type="submit">Log in</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
